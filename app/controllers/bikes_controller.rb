@@ -1,4 +1,4 @@
-class PlanksController < ApplicationController
+class BikesController < ApplicationController
 end
 
 
@@ -23,3 +23,4 @@ end
 # availability_start_date:date
 # availability_end_date:date
 # photo:char
+
