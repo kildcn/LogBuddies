@@ -23,7 +23,7 @@ bikes = [
     price: 15.0,
     availability_start_date: '2023-01-01',
     availability_end_date: '2023-03-31',
-    photo: 'https://i5.walmartimages.com/seo/Hyper-Bicycle-Men-s-29-In-Explorer-Dual-Suspension-Mountain-Bike-Red_d885e90f-d5fa-4c8d-b79a-801ed6ae5bb2.38883fa729039ce5aaf1ffd4395718b7.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF'
+    photo: 'https://cdn.pixabay.com/photo/2016/11/18/12/49/bicycle-1834265_1280.jpg'
   },
   {
     brand: 'City Cruiser',
@@ -32,7 +32,7 @@ bikes = [
     price: 10.0,
     availability_start_date: '2023-04-01',
     availability_end_date: '2023-06-30',
-    photo: 'https://example.com/photos/city_cruiser.jpg'
+    photo: 'https://cdn.pixabay.com/photo/2015/05/28/22/29/bicycle-788733_1280.jpg'
   },
   {
     brand: 'Speed Racer',
@@ -41,11 +41,11 @@ bikes = [
     price: 20.0,
     availability_start_date: '2023-07-01',
     availability_end_date: '2023-09-30',
-    photo: 'https://example.com/photos/speed_racer.jpg'
+    photo: 'https://cdn.pixabay.com/photo/2013/07/13/13/46/bicycle-161524_1280.png'
   }
 ]
 
-emmasbike = Bike.new(brand: 'Speed Racer', description: 'A fast bike for those who love speed.', user_id: emma.id, price: 20.0, availability_start_date: '2023-07-01', availability_end_date: '2023-09-30', photo: 'https://example.com/photos/speed_racer.jpg')
+emmasbike = Bike.new(brand: 'Speed Racer', description: 'A fast bike for those who love speed.', user_id: emma.id, price: 20.0, availability_start_date: '2023-07-01', availability_end_date: '2023-09-30', photo: 'https://cdn.pixabay.com/photo/2016/11/23/15/38/augmented-reality-1853592_1280.jpg')
 emmasbike.save!
 
 bikes.each do |bike_attributes|
@@ -56,7 +56,7 @@ bikes.each do |bike_attributes|
     user: [killian, emma, alberto, maksym].sample,
     availability_start_date: '2023-07-01',
     availability_end_date: '2023-09-30',
-    photo: 'https://example.com/photos/speed_racer.jpg'
+    photo: 'https://cdn.pixabay.com/photo/2013/07/13/13/46/bicycle-161524_1280.png'
   )
 end
 
