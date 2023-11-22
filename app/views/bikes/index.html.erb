@@ -1,15 +1,18 @@
 <h1>List all the bikes</h1>
 
 <div class="container">
-    <%= @bikes.each do | bike | %>
-        <div class="bikes-cards">
+    <% @bikes.each do | bike | %>
+        <div class="bike-card">
             <div class="picture">
-                <%= bike.photo %>
+                <img src= <%= bike.photo %> >
             </div>
             <div class="info">
-                <%= bike.brand %>
-                <%= bike.description %>
-                <%= bike.price %>
+                <p>  <%= bike.brand %> </p>
+                <p> <%= bike.description %> </p>
+                <div class="bottom"> 
+                <p>  <%= bike.price %> </p>
+                <%= link_to "View Bike", bike_path(bike), class: "btn btn-primary" %>
+                </div>
             </div>
         </div>
     <% end %>
