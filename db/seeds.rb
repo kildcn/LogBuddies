@@ -32,7 +32,7 @@ bikes = [
     price: 15.0,
     availability_start_date: '2023-01-01',
     availability_end_date: '2023-03-31',
-    photo: 'https://example.com/photos/mountain_explorer.jpg'
+    photo: 'https://i5.walmartimages.com/seo/Hyper-Bicycle-Men-s-29-In-Explorer-Dual-Suspension-Mountain-Bike-Red_d885e90f-d5fa-4c8d-b79a-801ed6ae5bb2.38883fa729039ce5aaf1ffd4395718b7.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF'
   },
   {
     brand: 'City Cruiser',
