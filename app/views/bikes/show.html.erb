@@ -1,2 +1,10 @@
-<h1>Pages for ech Bike</h1>
-<%= link_to 'Show Bike', bike_path(@bike) %>
+<h1>Pages for each Bike</h1>
+
+<%# <%= link_to 'Show Bike', bike_path(@bike) %>
+
+<h1><%= @bike.brand %></h1>
+<p>Photo: <%= image_tag @bike.photo, alt: 'Bike Photo', class: 'bike-image' %> </p>
+
+<p>Brand: <%= @bike.brand %></p>
+<p>Description: <%= @bike.description %></p>
+<p>Price: <%= @bike.price %></p>
