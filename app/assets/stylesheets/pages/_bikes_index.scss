@@ -5,7 +5,28 @@
 }
 
 .bike-card {
+    margin: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px rgb(163, 161, 161);;
+    
+    p {
+        margin: 0;
+        padding: 5px;
+    }
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+    p {
+        margin:0;
+        padding: 5px;
+    }
 }
