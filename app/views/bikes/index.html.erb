@@ -3,11 +3,14 @@
 <div class="container">
     <%= @bikes.each do | bike | %>
         <div class="bikes-cards">
-            <%= bike.photo %>
-            <%= bike.name %>
-            <%= bike.brand %>
-            <%= bike.description %>
-            <%= bike.price %>
+            <div class="picture">
+                <%= bike.photo %>
+            </div>
+            <div class="info">
+                <%= bike.brand %>
+                <%= bike.description %>
+                <%= bike.price %>
+            </div>
         </div>
     <% end %>
 </div>
