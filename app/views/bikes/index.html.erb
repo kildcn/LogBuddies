@@ -2,17 +2,19 @@
 
 <div class="container">
     <% @bikes.each do | bike | %>
-        <div class="bike-card">
-            <div class="picture">
-                <img src= <%= bike.photo %> >
-            </div>
-            <div class="info">
-                <p>  <%= bike.brand %> </p>
-                <p> <%= bike.description %> </p>
-                <div class="bottom"> 
-                <p>  <%= bike.price %> </p>
-                <%= link_to "View Bike", bike_path(bike), class: "btn btn-primary" %>
+        <div class="bike-card d-flex flex-column justify-content-between">
+            <div >
+                <div class="picture">
+                    <img src= <%= bike.photo %> >
                 </div>
+                <div class="info">
+                    <p>  <%= bike.brand %> </p>
+                    <p> <%= bike.description %> </p>
+                </div>
+            </div>    
+            <div class="bottom"> 
+                <p>  <%= bike.price.round %> </p>
+                <%= link_to "View Bike", bike_path(bike), class: "btn btn-primary" %>
             </div>
         </div>
     <% end %>

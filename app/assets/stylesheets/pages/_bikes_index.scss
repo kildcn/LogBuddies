@@ -6,9 +6,7 @@
 
 .bike-card {
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    
     border: 2px solid rgb(179, 179, 179);
     border-radius: 5px;
     box-shadow: 5px 5px 3px rgb(163, 161, 161);;
@@ -28,5 +26,13 @@
     p {
         margin:0;
         padding: 5px;
+    }
+}
+
+.picture {
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 220px;
     }
 }
