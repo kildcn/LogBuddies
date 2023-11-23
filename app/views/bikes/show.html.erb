@@ -1,5 +1,27 @@
-<h1>More info</h1>
-<p><%= image_tag @bike.photo_url, alt: 'Bike Photo', class: 'bike-image' %></p>
-<h1><%= @bike.brand %></h1>
-<p><%= @bike.description %></p>
-<p><%= @bike.price %> 💶</p>
+<div class="bike">
+    <h1 class="m-3"><%= @bike.brand %></h1>
+    <%# <p><%= image_tag @bike.photo, alt: 'Bike Photo', class: 'bike-image' %> </p> 
+    <img class="single-bike" src= <%= @bike.photo %> >
+    <div class="bike-info m-3">
+        <p><strong>Brand:</strong>
+        <%= @bike.brand %></p>
+        <p><strong>Description:</strong> 
+        <%= @bike.description %></p>
+        <p><strong>Price:</strong> <%= @bike.price.round %>€</p>
+        <%# <div class="d-grid gap-2">
+            <%= link_to 'Rent me!', bike_bookings_path(@bike), class: "btn btn-primary" %>
+        <%# </div> %>
+    </div>
+<!-- Form needs to be implemented cleanly, also add post request -->
+<%# <%= link_to 'Show Bike', bike_path(@bike) %>
+
+<!-- Booking form below -->
+<%= simple_form_for [@bike, @booking] do |f| %>
+    <%= f.input :start_date, as: :date, start_day: Date.today, html5: true %>
+    <%= f.input :end_date, as: :date, html5: true %>
+    <%= f.input :total_price %>
+    <%= f.submit "Book now", class: "btn btn-primary" %>
+    <p>Price: <%= @bike.price %> €</p>
+    <% end %>
+
+</div>

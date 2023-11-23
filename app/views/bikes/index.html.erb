@@ -1,21 +1,23 @@
-<h1>List all the bikes</h1>
+<h2 class= "d-flex justify-content-center m-5">Available in your area</h2>
 
-<div class="container">
+<div class="container-index">
     <% @bikes.each do | bike | %>
-        <div class="bike-card">
-            <div class="picture">
-                <img src= <%= bike.photo_url %> >
-            </div>
-            <div class="info">
-                <p>  <%= bike.brand %> </p>
-                <p> <%= bike.description %> </p>
-                <div class="bottom">
-                <p>  <%= bike.price %> </p>
-                <%= link_to "View Bike", bike_path(bike), class: "btn btn-primary" %>
+        <div class="bike-card d-flex flex-column justify-content-between">
+            <div >
+                <div>
+                    <img class="picture"src= <%= bike.photo %> >
+
+     
                 </div>
+                <div class="info">
+                    <p>  <%= bike.brand %> </p>
+                    <p> <%= bike.description %> </p>
+                </div>
+            </div>    
+            <div class="bottom"> 
+                <p>  <%= bike.price.round %>€</p>
+                <%= link_to "View Bike", bike_path(bike), class: "btn btn-primary" %>
             </div>
         </div>
     <% end %>
 </div>
-
-<%# we whont se result her

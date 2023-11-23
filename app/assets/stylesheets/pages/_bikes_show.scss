@@ -1,0 +1,20 @@
+.bike {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:24px;
+
+    .single-bike {
+        border-radius: 8px;
+        box-shadow: 4px 4px 8px rgba(184, 182, 182, 0.719);
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+.bike-info {
+    width: 90%;
+    background-color: rgba(218, 218, 218, 0.295);
+    border-radius: 8px;
+    padding: 10px;
+}
