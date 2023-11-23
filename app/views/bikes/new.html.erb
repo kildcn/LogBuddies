@@ -1,0 +1,10 @@
+<h1>Rent your bike ...</h1>
+
+<%= simple_form_for(@bike) do |f| %>
+    <%= f.input :brand %>
+    <%= f.input :description %>
+    <%= f.input :price %>
+    <%= f.input :photo_url %>
+
+    <%= f.submit "Create Bike", class: "btn btn-primary" %>
+<% end %>
