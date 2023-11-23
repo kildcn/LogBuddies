@@ -1,11 +1,11 @@
 <div class="bike">
     <h1 class="m-3"><%= @bike.brand %></h1>
-    <%# <p><%= image_tag @bike.photo, alt: 'Bike Photo', class: 'bike-image' %> </p> 
-    <img class="single-bike" src= <%= @bike.photo %> >
+    <%# <p><%= image_tag @bike.photo, alt: 'Bike Photo', class: 'bike-image' %> </p>
+    <img class="single-bike" src= <%= @bike.photo_url %> >
     <div class="bike-info m-3">
         <p><strong>Brand:</strong>
         <%= @bike.brand %></p>
-        <p><strong>Description:</strong> 
+        <p><strong>Description:</strong>
         <%= @bike.description %></p>
         <p><strong>Price:</strong> <%= @bike.price.round %>€</p>
         <%# <div class="d-grid gap-2">
