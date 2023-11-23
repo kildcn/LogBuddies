@@ -4,12 +4,12 @@
     <% @bikes.each do | bike | %>
         <div class="bike-card">
             <div class="picture">
-                <img src= <%= bike.photo %> >
+                <img src= <%= bike.photo_url %> >
             </div>
             <div class="info">
                 <p>  <%= bike.brand %> </p>
                 <p> <%= bike.description %> </p>
-                <div class="bottom"> 
+                <div class="bottom">
                 <p>  <%= bike.price %> </p>
                 <%= link_to "View Bike", bike_path(bike), class: "btn btn-primary" %>
                 </div>
@@ -17,3 +17,5 @@
         </div>
     <% end %>
 </div>
+
+<%# we whont se result her
