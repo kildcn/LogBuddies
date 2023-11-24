@@ -12,9 +12,28 @@
     }
 }
 
-.bike-info {
+.bike-info, .reviews {
     width: 90%;
     background-color: rgba(218, 218, 218, 0.295);
     border-radius: 8px;
     padding: 10px;
+    margin: 10px;
+}
+
+.user-name-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 50px;
+    margin: 16px;
+}
+
+.user-review {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+
+    p{
+        margin:0;
+    }
 }

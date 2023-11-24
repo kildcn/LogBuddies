@@ -13,23 +13,26 @@
         <%# </div> %>
     </div>
 
-<!-- Form needs to be implemented cleanly, also add post request -->
-<%# <%= link_to 'Show Bike', bike_path(@bike) %>
-
 <!-- Booking form below -->
-<%= simple_form_for [@bike, @booking] do |f| %>
-    <%= f.input :start_date, as: :date, start_day: Date.today, html5: true %>
-    <%= f.input :end_date, as: :date, html5: true %>
-    <%= f.input :total_price %>
-    <%= f.submit "Book now", class: "btn btn-primary" %>
-    <p>Price: <%= @bike.price.round %> €</p>
-    <% end %>
+    <%= simple_form_for [@bike, @booking] do |f| %>
+        <%= f.input :start_date, as: :date, start_day: Date.today, html5: true %>
+        <%= f.input :end_date, as: :date, html5: true %>
+        <%= f.input :total_price %>
+        <%= f.submit "Book now", class: "btn btn-primary" %>
+        <p>Price: <%= @bike.price.round %> €</p>
+        <% end %>
 
-</div>
+    <h2>Reviews about this bike</h2>
+    <div class="reviews">
+        <div class="user-name-container">
+            <a> <strong> <%= @bike.renter %> </strong> </a>
 
-<div class="reviews">
-
-    <p> <%= @bike.renter %> </p>
-    <p> <%= @bike.rating %> </p>
-    <p> <%= @bike.review %> </p>
+            <a>  <%= (@bike.rating).times do %>
+            <a>  <%=   puts "Star emoji" %> </a>
+                <%  end %>/5 </a> 
+        </div>
+        <div class="user-review">
+            <p> <em> " <%= @bike.review %> "</em> </p>
+        </div>
+    </div>
 </div>
