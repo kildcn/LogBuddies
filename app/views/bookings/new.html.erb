@@ -1,0 +1,9 @@
+<h1>Book your bike ...</h1>
+
+<%= simple_form_for [@bike, @booking] do |f| %>
+  <%= f.input :start_date, as: :date, start_day: Date.today, html5: true %>
+  <%= f.input :end_date, as: :date, html5: true %>
+  <p>Price: <strong><%= @bike.price.round %>€</strong> per/day</p>
+  <%= f.submit "Book now", class: "btn btn-primary" %>
+  <% end %>
+</div>

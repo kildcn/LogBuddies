@@ -8,8 +8,15 @@ class BookingsController < ApplicationController
 
   def create
     @bike = Bike.find(params[:bike_id])
-    @booking = @bike.bookings.new(booking_params)
+
+    @booking = Booking.new(booking_params)
     @booking.user = current_user
+    @booking.bike = @bike
+    @booking.rental_status = "pending"
+    start_date = params[:booking][:start_date].to_date
+    end_date = params[:booking][:end_date].to_date
+    duration_in_days = (end_date - start_date).to_i
+    @booking.total_price = duration_in_days * @bike.price.to_i
 
     if @booking.save
       # handle successful booking
@@ -26,6 +33,6 @@ class BookingsController < ApplicationController
   end
 
   def booking_params
-    params.require(:booking).permit(:start_date, :end_date, :total_price, :rental_status)
+    params.require(:booking).permit(:start_date, :end_date)
   end
 end
