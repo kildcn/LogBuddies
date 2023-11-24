@@ -10,3 +10,17 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-image: linear-gradient(#ffafbd, #ffc3a0);
+  min-height: 100vh; // Ensures that the gradient covers the entire viewport height
+  margin: 0; // Removes default margin
+  padding: 0; // Removes default padding
+}
+
+ .navbar {
+  background-color: #fef9ef;
+  margin: 0; // Removes default margin
+  padding: 0; // Removes default padding#bdc3c7 → #2c3e50
+
+}
