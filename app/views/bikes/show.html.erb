@@ -14,4 +14,21 @@
     </div>
 
 
+
+    <h2>Reviews about this bike</h2>
+    <div class="reviews">
+        <div class="user-name-container">
+            <a> <strong> <%= @bike.renter %> </strong> </a>
+
+            <a>  <%= (@bike.rating).times do %>
+            <a>  <%=   puts "Star emoji" %> </a>
+                <%  end %>/5 </a> 
+        </div>
+        <div class="user-review">
+            <p> <em> " <%= @bike.review %> "</em> </p>
+        </div>
+    </div>
+</div>
+
 <%= link_to "Book now", new_bike_booking_path(@bike), class: "btn btn-primary" %>
+
