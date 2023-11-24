@@ -12,7 +12,7 @@
     </div>
         <div class="rent-btn">
             <%= link_to "Book now", new_bike_booking_path(@bike), class: "btn btn-primary border-0 shadow" %>
-        </div>    
+        </div>
 
     </div>
 
@@ -22,14 +22,10 @@
     <div class="reviews">
         <div class="user-name-container">
             <a> <strong> <%= @bike.renter %> </strong> </a>
-            <a>  <%= (@bike.rating).times do %>
-            <a>  <%=   puts "Star emoji" %> </a>
-                <%  end %>/5 </a>
+            <a>  <%= @bike.rating %>/5 </a>
         </div>
         <div class="user-review">
             <p> <em> " <%= @bike.review %> "</em> </p>
         </div>
     </div>
 </div>
-
-
