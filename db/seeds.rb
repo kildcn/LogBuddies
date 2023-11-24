@@ -26,7 +26,7 @@ bikes = [
     photo_url: 'https://cdn.pixabay.com/photo/2016/11/18/12/49/bicycle-1834265_1280.jpg',
     review:'I almost died. It has no brakes',
     rating: 1,
-    renter: 'Peter Griffin'
+    renter: 'Peter Griffin',
     },
   {
     brand: 'City Cruiser',
@@ -38,7 +38,7 @@ bikes = [
     photo_url: 'https://cdn.pixabay.com/photo/2015/05/28/22/29/bicycle-788733_1280.jpg',
     review: 'Great bike. I totally recommend it :)',
     rating: 5,
-    renter: 'Lili_001212'
+    renter: 'Lili_001212',
 
   },
   {
@@ -51,7 +51,7 @@ bikes = [
     photo_url: 'https://cdn.pixabay.com/photo/2013/07/13/13/46/bicycle-161524_1280.png',
     review:`not as fast as they say. It's a scam! Cars were faster!!`,
     rating: 2,
-    renter: 'brain_damage123sh: 1: Syntax error: Unterminated quoted string'
+    renter: 'brain_damage123sh: 1: Syntax error: Unterminated quoted string',
   }
 ]
 
@@ -69,7 +69,7 @@ bikes.each do |bike_attributes|
     photo_url: 'https://cdn.pixabay.com/photo/2013/07/13/13/46/bicycle-161524_1280.png',
     review: bike_attributes[:review],
     rating: bike_attributes[:rating],
-    renter: bike_attributes[:renter]
+    renter: bike_attributes[:renter],
   )
 end
 
