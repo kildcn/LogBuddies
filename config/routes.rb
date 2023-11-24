@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'rentals/index'
   devise_for :users
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -7,12 +8,15 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
+  get "/rentals" => "rentals#index", as: :rentals
+
   # Defines the root path route ("/")
 
   root to: "pages#home"
 
   resources :bikes, only: [:index, :show, :new, :create] do
     resources :bookings, only: [:new, :create]
+    resources :rentals, only: [:index]
   end
 
 end

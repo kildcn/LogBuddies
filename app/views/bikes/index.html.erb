@@ -3,11 +3,9 @@
 <div class="container-index">
     <% @bikes.each do | bike | %>
         <div class="bike-card d-flex flex-column justify-content-between">
-            <div >
+            <div>
                 <div>
                     <img class="picture"src= <%= bike.photo_url %> >
-
-
                 </div>
                 <div class="info">
                     <p>  <%= bike.brand %> </p>
@@ -15,7 +13,7 @@
                 </div>
             </div>
             <div class="bottom">
-                <p>  <%= bike.price.round %>€</p>
+                <p> <%= bike.price.round %>€</p>
                 <%= link_to "View Bike", bike_path(bike), class: "btn btn-primary rounded-lg" %>
             </div>
         </div>

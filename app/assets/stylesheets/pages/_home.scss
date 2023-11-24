@@ -1,1 +1,51 @@
 // Specific CSS for your home-page
+.top {
+  text-align: center;
+
+}.content {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  min-height: 80vh;
+}
+
+.card {
+  flex: 1; /* Each card takes up an equal amount of space */
+  text-align: center; /* Center text horizontally */
+  padding: 20px;
+  height: auto;
+  margin: 10px;
+  text-decoration: none; /* Remove underline from links */
+  color: rgb(0, 0, 0); /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: space-between;
+}
+
+.card:hover {
+  background-color: #ff8800; /* Darker shade on hover */
+}
+
+.btn {
+  font-size: 1.5em;
+  background-color: #ffc3a0; /* Larger text */
+}
+
+#btn1 {
+  background-image: url("https://i.ibb.co/41GR21L/bikecard.png");
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+#btn2 {
+  background: url("https://i.ibb.co/b6m5xPv/bikecardshare.jpg");
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
