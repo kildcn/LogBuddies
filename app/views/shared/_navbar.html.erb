@@ -1,8 +1,8 @@
 <div class="sticky">
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar-fixed-top">
   <div class="container-fluid">
     <%= link_to "/", class: "navbar-brand" do %>
-      <%= image_tag "https://i.ibb.co/wKCXpz5/bikelogo.jpg" %>
+      <%= image_tag "https://i.ibb.co/VMqQXPX/bikelogots.png" %>
     <% end %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -11,19 +11,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/"> Home</a>
+          <%= link_to "Home", root_path, class: "nav-link" %>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/bikes"> Find-bike</a>
+          <%= link_to "Find Bike", bikes_path, class: "nav-link" %>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/bikes/1/bookings/new"> Book-bike</a>
+          <a class="nav-link" href="#"> Book-bike</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/bikes/new"> Rent-bike</a>
+          <%= link_to "Add a new bike", new_bike_path, class: "nav-link" %>
         </li>
       </ul>
     </div>

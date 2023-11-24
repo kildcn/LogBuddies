@@ -96,9 +96,9 @@ bikes = [
     availability_start_date: '2023-07-01',
     availability_end_date: '2023-09-30',
     photo_url: 'https://i.ibb.co/Ws0V9mv/Olivierface.jpg',
-    review: 'perfect for kids or very small people',
+    review: 'I feel a better person after renting this bike',
     rating: 5,
-    renter: 'user_3422',
+    renter: 'user_12329',
   },
   {
     brand: "The Lucasmobile",
@@ -119,10 +119,10 @@ bikes = [
     price: 11,
     availability_start_date: '2023-07-01',
     availability_end_date: '2023-09-30',
-    photo_url: 'https://i.ibb.co/VNy53qp/lucasface.jpg',
-    review: 'perfect for kids or very small people',
-    rating: 5,
-    renter: 'user_3422',
+    photo_url: 'https://i.ibb.co/r02F3Rt/pedrobike.jpg',
+    review: 'I did not look so cool when I rented this bike... where can I request a refund?',
+    rating: 2,
+    renter: 'the-dude_23',
   },
   {
     brand: "Adamlicious",
@@ -132,9 +132,9 @@ bikes = [
     availability_start_date: '2023-07-01',
     availability_end_date: '2023-09-30',
     photo_url: 'https://i.ibb.co/FKPRx8N/adamface.jpg',
-    review: 'perfect for kids or very small people',
+    review: 'susbscribe to my neeeew chanel --> https://www.youtube.com/watch?v=dQw4w9WgXcQ ',
     rating: 5,
-    renter: 'user_3422',
+    renter: 'Mr. Beast',
   }
 ]
 
