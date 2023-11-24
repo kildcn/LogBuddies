@@ -7,7 +7,7 @@
         <%= @bike.brand %></p>
         <p><strong>Description:</strong>
         <%= @bike.description %></p>
-        <p><strong>Price:</strong> <%= @bike.price.round %>€</p>
+        <p><strong>Price:</strong> <%= @bike.price.round %>€ per day</p>
         <%# <div class="d-grid gap-2">
             <%= link_to 'Rent me!', bike_bookings_path(@bike), class: "btn btn-primary" %>
         <%# </div> %>
@@ -20,10 +20,7 @@
     <%= f.input :start_date, as: :date, start_day: Date.today, html5: true %>
     <%= f.input :end_date, as: :date, html5: true %>
     <%= f.input :total_price %>
-    <% f.association @booking.user_id %>
-    <% f.association @bike.bike_id %>
     <%= f.submit "Book now", class: "btn btn-primary" %>
-    <p>Price: <%= @bike.price.round %> €</p>
     <% end %>
 
 </div>
