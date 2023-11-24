@@ -1,7 +1,13 @@
-<div class="top" >
+<div class="top">
     <h1>Rent for profit, or ride just for fit.</h1>
 </div>
-    <div class="content">
-    <%= link_to "Rent Bike", bikes_path, class: "btn btn-primary" %>
-    <%= link_to "Rent Out your Bike", new_bike_path, class: "btn btn-primary" %>
+<div class="content">
+    <div class="card-container">
+        <a href="<%= bikes_path %>" class="card btn" id="btn1">
+            <span>Rent Bike</span>
+        </a>
+        <a href="<%= new_bike_path %>" class="card btn" id="btn2">
+            <span>Rent Out Your Bike</span>
+        </a>
+    </div>
 </div>

@@ -7,12 +7,11 @@
         <%= @bike.brand %></p>
         <p><strong>Description:</strong>
         <%= @bike.description %></p>
-        <p><strong>Price:</strong> <%= @bike.price.round %>€</p>
+        <p><strong>Price:</strong> <%= @bike.price.round %>€ per day</p>
         <%# <div class="d-grid gap-2">
             <%= link_to 'Rent me!', bike_bookings_path(@bike), class: "btn btn-primary" %>
         <%# </div> %>
     </div>
-<!-- Form needs to be implemented cleanly, also add post request -->
-<%# <%= link_to 'Show Bike', bike_path(@bike) %>
+
 
 <%= link_to "Book now", new_bike_booking_path(@bike), class: "btn btn-primary" %>
