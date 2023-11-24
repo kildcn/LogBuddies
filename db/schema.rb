@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_22_114424) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_24_094150) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -24,6 +24,9 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_22_114424) do
     t.bigint "user_id", null: false
     t.date "availability_start_date"
     t.date "availability_end_date"
+    t.string "review"
+    t.integer "rating"
+    t.string "renter"
     t.index ["user_id"], name: "index_bikes_on_user_id"
   end
 
